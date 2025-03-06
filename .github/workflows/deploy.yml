@@ -20,7 +20,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm config set legacy-peer-deps true
-          npm ci --force
+          npm install --force
           npm run build
         env:
           CI: false
