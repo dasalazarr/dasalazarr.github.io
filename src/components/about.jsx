@@ -6,55 +6,55 @@ class About extends React.Component {
     super();
     this.state = {
       skills: [
-        { id: "HTML5_skill", content: "HTML5", porcentage: "80%", value: "80" },
-        { id: "CSS3_skill", content: "CSS3", porcentage: "75%", value: "75" },
+        { id: "DataAnalysis_skill", content: "Análisis de Datos", porcentage: "90%", value: "90" },
+        { id: "BusinessIntelligence_skill", content: "Business Intelligence", porcentage: "85%", value: "85" },
         {
-          id: "JavaScript_skill",
-          content: "JavaScript",
+          id: "ProductManagement_skill",
+          content: "Gestión de Productos",
           porcentage: "90%",
           value: "90"
         },
-        { id: "PHP_skill", content: "PHP", porcentage: "70%", value: "70" },
+        { id: "Strategy_skill", content: "Estrategia y Transformación", porcentage: "85%", value: "85" },
         {
-          id: "ReactJS_skill",
-          content: "ReactJS",
+          id: "ProjectManagement_skill",
+          content: "Gestión de Proyectos Agile",
           porcentage: "80%",
           value: "80"
         },
         {
-          id: "Python_skill",
-          content: "Python",
-          porcentage: "75%",
-          value: "75"
-        },
-        {
-          id: "VanillaJS_skill",
-          content: "VanillaJS",
+          id: "Leadership_skill",
+          content: "Liderazgo",
           porcentage: "85%",
           value: "85"
         },
         {
-          id: "Wordpress_skill",
-          content: "Wordpress",
+          id: "PowerBI_skill",
+          content: "Power BI + SQL",
           porcentage: "80%",
           value: "80"
+        },
+        {
+          id: "PowerApps_skill",
+          content: "Power Apps + Power Automate",
+          porcentage: "75%",
+          value: "75"
         }
       ],
       about_me: [
         {
           id: "first-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "Líder en Transformación Digital y Análisis de Datos con más de 6 años de experiencia impulsando la eficiencia operativa y la toma de decisiones estratégicas en entornos multinacionales. Especializado en Análisis de Negocios, Analítica de Datos y Estrategia de Transformación."
         },
         {
           id: "second-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "Amplia experiencia en gestión de incertidumbre, automatización de procesos y liderazgo interfuncional para optimizar la eficiencia empresarial. Mi enfoque se centra en utilizar datos para impulsar decisiones estratégicas y mejorar los resultados del negocio."
         },
         {
           id: "third-p-about",
           content:
-            "Lorem ipsum pariatur consectetur laboris occaecat nulla aliqua irure ad deserunt duis. Eiusmod nulla cupidatat labore sint sit aute dolore irure nostrud ut incididunt. Anim laborum reprehenderit labore magna ut dolore quis irure. Labore ea duis deserunt ullamco irure fugiat deserunt ut nisi ea minim proident. Nisi consectetur do non magna duis aliqua minim minim veniam. In occaecat minim qui consequat elit mollit consectetur non id tempor. Amet adipisicing occaecat tempor culpa quis est duis."
+            "Como fundador de Illari Tech, me especializo en soluciones basadas en IA para pequeñas y medianas empresas, ayudándolas a aumentar su productividad y reducir costos operativos mediante la transformación digital."
         }
       ]
     };
@@ -86,7 +86,7 @@ class About extends React.Component {
                       </div>
                     </div>
                     <div className="skill-mf">
-                      {/* <p className="title-s">Skill</p> */}
+                      <p className="title-s">Habilidades</p>
                       {this.state.skills.map(skill => {
                         return (
                           <React.Fragment key={skill.id}>
@@ -112,7 +112,7 @@ class About extends React.Component {
                   <div className="col-md-6">
                     <div className="about-me pt-4 pt-md-0">
                       <div className="title-box-2">
-                        <h5 className="title-left">About Me</h5>
+                        <h5 className="title-left">Sobre Mí</h5>
                       </div>
                       {this.state.about_me.map(content => {
                         return (

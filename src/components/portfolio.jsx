@@ -16,10 +16,9 @@ class Portfolio extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box text-center">
-                <h3 className="title-a">Portfolio</h3>
+                <h3 className="title-a">Experiencia Profesional</h3>
                 <p className="subtitle-a">
-                  Incididunt nostrud id aute culpa excepteur pariatur consequat
-                  elit culpa nulla enim anim incididunt.
+                  Mi trayectoria profesional en transformación digital, gestión de productos y consultoría
                 </p>
                 <div className="line-mf"></div>
               </div>
@@ -35,10 +34,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Illari Tech</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap ReactJS
+                            Fundador | 2024 - Actualidad
                           </span>
                         </div>
                       </div>
@@ -96,11 +95,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Telefónica Hispam</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack SmoothScrolling
-                            VanillaJS
+                            Especialista en Transformación Digital e Innovación | 2022 - Actualidad
                           </span>{" "}
                         </div>
                       </div>
@@ -158,12 +156,11 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">ARS Internacional</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap Webpack ReactJS
+                            Consultor de Procesos y Product Owner | 2021 - 2022
                           </span>
-                          {/*} / <span className="w-date">18 Sep. 2018</span>*/}
                         </div>
                       </div>
                       <div className="col-sm-4">
@@ -211,6 +208,8 @@ class Portfolio extends React.Component {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="row">
             <div className="col-md-4">
               <div className="work-box">
                 <a href={stock} data-lightbox="gallery-medlingos">
@@ -220,10 +219,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Rotaract Quito Latitud Cero</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            Bootstrap ReactJS GoogleAPI
+                            Presidente | 2022 - 2023
                           </span>
                         </div>
                       </div>
@@ -234,41 +233,6 @@ class Portfolio extends React.Component {
                       </div>
                     </div>
                   </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-medlingos"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
                 </a>
               </div>
             </div>
@@ -281,9 +245,11 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Hyundai Ecuador</h2>
                         <div className="w-more">
-                          <span className="w-ctegory">MERN</span>
+                          <span className="w-ctegory">
+                            Ingeniero de Procesos | 2018 - 2020
+                          </span>
                         </div>
                       </div>
                       <div className="col-sm-4">
@@ -293,41 +259,6 @@ class Portfolio extends React.Component {
                       </div>
                     </div>
                   </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-smth"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
                 </a>
               </div>
             </div>
@@ -340,10 +271,10 @@ class Portfolio extends React.Component {
                   <div className="work-content">
                     <div className="row">
                       <div className="col-sm-8">
-                        <h2 className="w-title">Lorem Ipsum</h2>
+                        <h2 className="w-title">Educación</h2>
                         <div className="w-more">
                           <span className="w-ctegory">
-                            HTML5 CSS3 Bootstrap MERN
+                            Master in Business & Technology | Ingeniero Industrial | Emprendedor de Alto Impacto
                           </span>
                         </div>
                       </div>
@@ -354,41 +285,6 @@ class Portfolio extends React.Component {
                       </div>
                     </div>
                   </div>
-                </a>
-                <a
-                  href={stock1}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock2}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock3}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock4}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
-                </a>
-                <a
-                  href={stock5}
-                  data-lightbox="gallery-mf"
-                  style={{ display: "none" }}
-                >
-                  jsx-a11y/anchor-has-content warning
                 </a>
               </div>
             </div>
