@@ -17,9 +17,15 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Install Python 2
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python2
+
       - name: Install and Build 🔧
         run: |
-          npm ci
+          npm i -g npm@7
+          npm ci --legacy-peer-deps
           npm run build
 
       - name: Deploy 🚀
