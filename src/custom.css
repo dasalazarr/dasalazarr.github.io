@@ -1,0 +1,173 @@
+/* Custom styles for dark background and rounded progress bars */
+
+/* Dark background for about section */
+.about-mf {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+/* Remove top padding from about section */
+.about-mf.sect-pt4 {
+  padding-top: 0 !important;
+}
+
+/* Make the container and rows take full width in about section */
+.about-mf .container,
+.about-mf .row,
+.about-mf .col-sm-12 {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Text color adjustments for dark background */
+.about-mf .title-s,
+.about-mf .title-left,
+.about-mf span {
+  color: #ffffff !important;
+}
+
+/* Progress bar styling */
+.skill-mf .progress {
+  border-radius: 10px !important;
+  overflow: hidden;
+  background-color: #2d2d2d !important;
+  height: 0.7rem;
+  width: 100%;
+  margin: 0;
+}
+
+.skill-mf .progress .progress-bar {
+  border-radius: 10px !important;
+  background-color: #0078ff !important;
+  height: 0.7rem;
+  transition: width 1s ease-in-out;
+}
+
+/* Skill layout */
+.skill-mf {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skill-mf span {
+  display: inline-block;
+  text-align: left;
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* Create a flex layout for skills and progress bars */
+.skill-mf .skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.skill-mf .skill-name {
+  min-width: 160px;
+  width: 40%;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.skill-mf .progress-container {
+  flex: 1;
+  width: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.skill-mf .skill-value {
+  width: 10%;
+  text-align: right;
+  min-width: 45px;
+}
+
+/* Box shadow adjustment for dark background */
+.box-shadow-full {
+  background-color: #1e1e1e !important;
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.06), 0 2px 5px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Contact section text color */
+#contact,
+#contact h5,
+#contact p,
+#contact .lead,
+#contact span,
+#contact li,
+#contact a,
+#contact ul li span {
+  color: #ffffff !important;
+}
+
+/* Remove white bars and add padding */
+#root {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  overflow: hidden;
+}
+
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+}
+
+.navbar {
+  margin-top: 0 !important;
+}
+
+/* Fix for intro section to remove any white space */
+.intro {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure sections connect without gaps */
+section {
+  margin-top: 0 !important;
+}
+
+.col-md-12 {
+  padding-bottom: 10px !important;
+}
+
+/* Make the box-shadow-full div take full width in about section */
+.about-mf .box-shadow-full {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  padding: 3rem 2rem !important;
+}
+
+/* Ensure inner elements also take full width */
+.about-mf .col-md-12 {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* Center the title and adjust the underline */
+.title-box-2 {
+  text-align: center;
+}
+
+.title-left {
+  text-align: center;
+}
+
+.title-left:before {
+  background-color: #0078ff !important;
+  width: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}

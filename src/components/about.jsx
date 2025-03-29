@@ -1,63 +1,109 @@
 import React from "react";
 import myImage from "../img/myImage.png";
+import $ from 'jquery';
 
 class About extends React.Component {
   constructor() {
     super();
     this.state = {
+      skillsAnimated: false,
       skills: [
-        { id: "DataAnalysis_skill", content: "Análisis de Datos", porcentage: "90%", value: "90" },
-        { id: "BusinessIntelligence_skill", content: "Business Intelligence", porcentage: "85%", value: "85" },
+        { id: "DataAnalysis_skill", 
+          content: "Data Analytics y Business Intelligence", 
+          porcentage: "95%", 
+          value: "95" },
+        { id: "DigitalTransformation_skill", 
+          content: "Transformación Digital e Innovación", 
+          porcentage: "95%", 
+          value: "95" },
         {
-          id: "ProductManagement_skill",
-          content: "Gestión de Productos",
+          id: "AgileProjectMgmt_skill",
+          content: "Gestión de Proyectos Agile",
           porcentage: "90%",
           value: "90"
         },
-        { id: "Strategy_skill", content: "Estrategia y Transformación", porcentage: "85%", value: "85" },
+        { id: "LeanSixSigma_skill", 
+          content: "Lean & Six Sigma (Optimización de procesos)", 
+          porcentage: "85%", 
+          value: "85" },
         {
-          id: "ProjectManagement_skill",
-          content: "Gestión de Proyectos Agile",
+          id: "FinancialMgmt_skill",
+          content: "Gestión Financiera y Análisis de P&L",
           porcentage: "80%",
           value: "80"
         },
         {
-          id: "Leadership_skill",
-          content: "Liderazgo",
-          porcentage: "85%",
-          value: "85"
-        },
-        {
-          id: "PowerBI_skill",
-          content: "Power BI + SQL",
+          id: "ProductMgmt_skill",
+          content: "Product Management",
           porcentage: "80%",
           value: "80"
         },
         {
-          id: "PowerApps_skill",
-          content: "Power Apps + Power Automate",
+          id: "ProcessAutomation_skill",
+          content: "Automatización de Procesos (Power Automate & Power Apps)",
+          porcentage: "80%",
+          value: "80"
+        },
+        {
+          id: "RiskMgmt_skill",
+          content: "Evaluación y Gestión de Riesgos",
           porcentage: "75%",
           value: "75"
+        },
+        {
+          id: "ProblemSolving_skill",
+          content: "Resolución de Problemas Complejos",
+          porcentage: "75%",
+          value: "75"
+        },
+        {
+          id: "AppliedAI_skill",
+          content: "Inteligencia Artificial Aplicada (RAG)",
+          porcentage: "50%",
+          value: "50"
+        },
+        {
+          id: "AIEthicsPrivacy_skill",
+          content: "AI Ethics & Data Privacy",
+          porcentage: "40%",
+          value: "40"
         }
       ],
-      about_me: [
-        {
-          id: "first-p-about",
-          content:
-            "Líder en Transformación Digital y Análisis de Datos con más de 6 años de experiencia impulsando la eficiencia operativa y la toma de decisiones estratégicas en entornos multinacionales. Especializado en Análisis de Negocios, Analítica de Datos y Estrategia de Transformación."
-        },
-        {
-          id: "second-p-about",
-          content:
-            "Amplia experiencia en gestión de incertidumbre, automatización de procesos y liderazgo interfuncional para optimizar la eficiencia empresarial. Mi enfoque se centra en utilizar datos para impulsar decisiones estratégicas y mejorar los resultados del negocio."
-        },
-        {
-          id: "third-p-about",
-          content:
-            "Como fundador de Illari Tech, me especializo en soluciones basadas en IA para pequeñas y medianas empresas, ayudándolas a aumentar su productividad y reducir costos operativos mediante la transformación digital."
-        }
-      ]
+      about_me: []
     };
+  }
+
+  componentDidMount() {
+    // Agregar evento de scroll para animar las barras de progreso
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    // Remover evento al desmontar el componente
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    if (!this.state.skillsAnimated) {
+      const skillsSection = document.querySelector('.skill-mf');
+      if (skillsSection) {
+        const sectionPosition = skillsSection.getBoundingClientRect();
+        const screenPosition = window.innerHeight;
+        
+        if (sectionPosition.top < screenPosition) {
+          this.setState({ skillsAnimated: true });
+          this.animateSkills();
+        }
+      }
+    }
+  }
+
+  animateSkills = () => {
+    $('.progress-bar').each(function() {
+      const width = $(this).attr('aria-valuenow') + '%';
+      $(this).css('width', '0%');
+      $(this).animate({ width: width }, 1000);
+    });
   }
 
   render() {
@@ -68,59 +114,37 @@ class About extends React.Component {
             <div className="col-sm-12">
               <div className="box-shadow-full">
                 <div className="row">
-                  <div className="col-md-6">
-                    <div className="row">
-                      <div
-                        className="col-sm-6 col-md-5"
-                        style={{ margin: "0 auto" }}
-                      >
-                        <div
-                          className="about-img"
-                          style={{ textAlign: "center" }}
-                        >
-                          <img
-                            className="img-fluid rounded b-shadow-a"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="skill-mf">
-                      <p className="title-s">Habilidades</p>
-                      {this.state.skills.map(skill => {
-                        return (
-                          <React.Fragment key={skill.id}>
-                            <span>{skill.content}</span>{" "}
-                            <span className="pull-right">
-                              {skill.porcentage}
-                            </span>
-                            <div className="progress">
-                              <div
-                                className="progress-bar"
-                                role="progressbar"
-                                style={{ width: skill.porcentage }}
-                                aria-valuenow={skill.value}
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                              ></div>
-                            </div>
-                          </React.Fragment>
-                        );
-                      })}
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="about-me pt-4 pt-md-0">
+                  <div className="col-md-12">
+                    <div className="about-me">
                       <div className="title-box-2">
-                        <h5 className="title-left">Sobre Mí</h5>
+                        <h5 className="title-left">Habilidades</h5>
                       </div>
-                      {this.state.about_me.map(content => {
-                        return (
-                          <p className="lead" key={content.id}>
-                            {content.content}
-                          </p>
-                        );
-                      })}
+                      <div className="skill-mf">
+                        {this.state.skills.map(skill => {
+                          return (
+                            <div className="skill-item" key={skill.id}>
+                              <div className="skill-name">
+                                <span>{skill.content}</span>
+                              </div>
+                              <div className="progress-container">
+                                <div className="progress">
+                                  <div
+                                    className="progress-bar"
+                                    role="progressbar"
+                                    style={{ width: this.state.skillsAnimated ? skill.porcentage : '0%' }}
+                                    aria-valuenow={skill.value}
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  ></div>
+                                </div>
+                              </div>
+                              <div className="skill-value">
+                                <span>{skill.porcentage}</span>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>

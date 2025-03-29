@@ -37,9 +37,29 @@ class Intro extends React.Component {
                   href="#work"
                   role="button"
                 >
-                  Ver Mi Trabajo
+                  Ver Mis Proyectos
                 </a>
               </p>
+              <div className="intro-buttons" style={{ marginTop: '20px', display: 'flex', justifyContent: 'center', gap: '15px' }}>
+                <a
+                  className="btn btn-outline-light px-4"
+                  href="https://drive.google.com/file/d/1J_rBzGmCAW-h9EiWP3Bsn3IZHq_Sx0J_/view?usp=share_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  role="button"
+                  style={{ borderRadius: '5px', borderColor: '#007bff', color: '#fff', backgroundColor: 'transparent', borderWidth: '2px' }}
+                >
+                  Descargar CV
+                </a>
+                <a
+                  className="btn btn-outline-light js-scroll px-4"
+                  href="#contact"
+                  role="button"
+                  style={{ borderRadius: '5px', borderColor: '#007bff', color: '#fff', backgroundColor: 'transparent', borderWidth: '2px' }}
+                >
+                  Contactarme
+                </a>
+              </div>
             </div>
           </div>
         </div>

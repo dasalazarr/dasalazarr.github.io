@@ -14,11 +14,54 @@ class Contact extends React.Component {
             <div className="col-sm-12">
               <div className="contact-mf">
                 <div id="contact" className="box-shadow-full">
+                  <div className="row text-center">
+                    <div className="col-md-12">
+                      <div className="title-box-2 mb-4">
+                        <h5 className="title-left">Contacto</h5>
+                      </div>
+                    </div>
+                  </div>
                   <div className="row">
                     <div className="col-md-6">
-                      <div className="title-box-2">
-                        <h5 className="title-left">Envíame un Mensaje</h5>
+                      <div className="more-info mb-4">
+                        <p className="lead">
+                          Si quieres ponerte en contacto, hablar sobre una posible colaboración 
+                          o simplemente saludar, me encantaría saber de ti.
+                        </p>
+                        <ul className="list-ico mt-4">
+                          <li><span className="ion-ios-telephone"></span> +593-984074389</li>
+                          <li><span className="ion-email"></span> diego_salazar@outlook.com</li>
+                          <li><span className="ion-social-linkedin"></span> linkedin.com/in/dasalazarr</li>
+                        </ul>
                       </div>
+                      <div className="socials text-center mt-4">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://github.com/dasalazarr"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span className="ico-circle">
+                                <i className="ion-social-github"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://linkedin.com/in/dasalazarr"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <span className="ico-circle">
+                                <i className="ion-social-linkedin"></i>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
                       <div>
                         <form
                           action="https://formspree.io/xdoeonlo"
@@ -58,20 +101,7 @@ class Contact extends React.Component {
                                 <div className="validation"></div>
                               </div>
                             </div>
-                            <div className="col-md-12 mb-3">
-                              <div className="form-group">
-                                <input
-                                  type="text"
-                                  className="form-control"
-                                  name="subject"
-                                  id="subject"
-                                  placeholder="Asunto"
-                                  data-rule="minlen:4"
-                                  data-msg="Por favor ingresa al menos 8 caracteres para el asunto"
-                                />
-                                <div className="validation"></div>
-                              </div>
-                            </div>
+
                             <div className="col-md-12 mb-3">
                               <div className="form-group">
                                 <textarea
@@ -85,7 +115,7 @@ class Contact extends React.Component {
                                 <div className="validation"></div>
                               </div>
                             </div>
-                            <div className="col-md-12">
+                            <div className="col-md-12 text-center">
                               <button
                                 type="submit"
                                 className="button button-a button-big button-rouded"
@@ -95,50 +125,6 @@ class Contact extends React.Component {
                             </div>
                           </div>
                         </form>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="title-box-2 pt-4 pt-md-0">
-                        <h5 className="title-left">Contacto</h5>
-                      </div>
-                      <div className="more-info">
-                        <p className="lead">
-                          Si quieres ponerte en contacto, hablar sobre una posible colaboración 
-                          o simplemente saludar, me encantaría saber de ti.
-                          <br />
-                          Puedes contactarme a través de los siguientes medios:
-                        </p>
-                        <ul className="list-ico">
-                          <li><span className="ion-ios-telephone"></span> +593-984074389</li>
-                          <li><span className="ion-email"></span> diego_salazar@outlook.com</li>
-                          <li><span className="ion-social-linkedin"></span> linkedin.com/in/dasalazarr</li>
-                        </ul>
-                      </div>
-                      <div className="socials">
-                        <ul>
-                          <li>
-                            <a
-                              href="https://github.com/dasalazarr"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-github"></i>
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://linkedin.com/in/dasalazarr"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-linkedin"></i>
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
                       </div>
                     </div>
                   </div>
