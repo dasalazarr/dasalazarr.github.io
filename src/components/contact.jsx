@@ -29,7 +29,6 @@ class Contact extends React.Component {
                           o simplemente saludar, me encantaría saber de ti.
                         </p>
                         <ul className="list-ico mt-4">
-                          <li><span className="ion-ios-telephone"></span> +593-984074389</li>
                           <li><span className="ion-email"></span> diego_salazar@outlook.com</li>
                           <li><span className="ion-social-linkedin"></span> linkedin.com/in/dasalazarr</li>
                         </ul>
